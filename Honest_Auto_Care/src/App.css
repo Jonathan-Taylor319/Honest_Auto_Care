@@ -131,8 +131,21 @@ button:hover {
 }
 
 .homeHero {
-  width: 100%;
-  height: calc(100vh - 151px);
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   display: block;
+}
+
+.TopPics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.icon {
+  width: 250px;
+  height: auto;
 }
