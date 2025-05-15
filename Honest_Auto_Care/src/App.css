@@ -137,15 +137,51 @@ button:hover {
   display: block;
 }
 
-.TopPics {
+.listHolder {
+  display: flex;
+  justify-content: center;
+  color: #c9a753;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), 0 0 4px rgba(0, 0, 0, 0.6);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ServicesPhotos {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 2rem 0;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
-.icon {
-  width: 250px;
+.ServicesPhotos img {
+  max-width: 150px;
   height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .ServicesPhotos {
+    gap: 1rem;
+  }
+
+  .ServicesPhotos img {
+    max-width: 120px;
+  }
 }
