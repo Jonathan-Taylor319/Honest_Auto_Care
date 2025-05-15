@@ -18,4 +18,5 @@ Frontend: React, CSS3 (custom styling)
 Deployment: Netlify
 Email/Contact: Netlify Forms
 
-![Honest Auto Care Logo](https://github.com/user-attachments/assets/c1c91d45-fa56-4df4-88f4-8bd7e5cd4548)
+<img src="https://github.com/user-attachments/assets/c1c91d45-fa56-4df4-88f4-8bd7e5cd4548" alt="Honest Auto Care Logo" width="250" />
+
