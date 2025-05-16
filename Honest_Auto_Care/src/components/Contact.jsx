@@ -3,57 +3,71 @@ import { useState } from "react";
 export default function VehicleRequestForm() {
   const [submitted, setSubmitted] = useState(false);
 
-  function handleSubmit(e) {
-    setSubmitted(true);
-  }
-
   return (
     <>
-        <div className="form-container">
-            <form name="vehicle-request" method="POST" data-netlify="true">
-        <h2 style={{ textAlign: "center", color: "#d4af37", marginBottom: "1rem" }}>
-                Request Service :
-        </h2>
-            <input type="hidden" name="form-name" value="vehicle-request" />
+      <div className="form-container">
+        <form
+          name="job-request"
+          method="POST"
+          data-netlify="true"
+          onSubmit={(e) => {
+            e.preventDefault();
+            setSubmitted(true);
+            e.target.submit();
+          }}
+        >
+          <input type="hidden" name="form-name" value="job-request" />
 
-            <label>
-             Name:
+          <h2 style={{ textAlign: "center", color: "#d4af37", marginBottom: "1rem" }}>
+            Request Service :
+          </h2>
+
+          <label>
+            Name:
             <input type="text" name="name" required />
-            </label>
+          </label>
 
-            <label>
+          <label>
             Phone Number:
             <input type="tel" name="phone" required />
-            </label>
+          </label>
 
-            <label>
+          <label>
             VIN:
             <input type="text" name="vin" required />
-            </label>
+          </label>
 
-            <label>
+          <label>
             Year:
             <input type="text" name="year" required />
-            </label>
+          </label>
 
-            <label>
+          <label>
             Make:
             <input type="text" name="make" required />
-            </label>
+          </label>
 
-            <label>
+          <label>
             Model:
             <input type="text" name="model" required />
-            </label>
+          </label>
 
-            <label>
+          <label>
             Issues or Requested Services:
-            <textarea name="issues" placeholder="Describe the issue or service you’re requesting..." required />
-            </label>
+            <textarea
+              name="issues"
+              placeholder="Describe the issue or service you’re requesting..."
+              required
+            />
+          </label>
 
-            <button type="submit">Send Request</button>
-            </form>
-        </div>
+          <button type="submit">Send Request</button>
+        </form>
+
+        {submitted && (
+          <p className="thank-you">Thanks! Your request has been sent.</p>
+        )}
+      </div>
     </>
   );
 }
