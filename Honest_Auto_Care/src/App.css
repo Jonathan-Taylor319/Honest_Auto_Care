@@ -330,4 +330,9 @@ form button:hover {
     width: 100%;
     height: auto;
   }
+
+  .homeHero {
+  height: 40vh;
+  object-fit: cover;
+}
 }
