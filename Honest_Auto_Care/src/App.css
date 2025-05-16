@@ -332,7 +332,7 @@ form button:hover {
   }
 
   .homeHero {
-  height: 90vh;
+  height: 50vh;
   object-fit: cover;
 }
 }
