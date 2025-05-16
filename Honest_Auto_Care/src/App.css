@@ -8,8 +8,6 @@ html, body, #root {
 }
 
 body {
-  margin: 0;
-  padding: 0;
   background:
     linear-gradient(145deg, #1c1c1c, #2a2a2a),
     url('https://www.transparenttextures.com/patterns/asfalt-light.png');
@@ -254,18 +252,35 @@ form button:hover {
 
 /* --- MOBILE STYLES BELOW --- */
 @media (max-width: 600px) {
+  .topbar-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .topbar-logo {
+    padding-top: 0;
+    width: 120px;
+    height: auto;
+  }
+
+  .topbar-title {
+    position: static;
+    transform: none;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
   .topbar {
     padding: 0.5rem 1rem;
   }
 
-  .topbar-title {
-    font-size: 1.3rem;
-    padding-top: 0.5rem;
-    text-align: center;
-  }
-
-  .topbar-logo.right {
-    display: none;
+  .topbar-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
   }
 
   h1, h2 {
@@ -315,30 +330,4 @@ form button:hover {
     width: 100%;
     height: auto;
   }
-
-  .topbar-buttons {
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-  }
-  .topbar-header {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: auto;
-}
-
-.topbar-logo {
-  padding-top: 0;
-  width: 120px;
-  height: auto;
-}
-
-.topbar-title {
-  position: static;
-  transform: none;
-  text-align: center;
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-}
 }
