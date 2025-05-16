@@ -12,14 +12,15 @@ export default function ImageSlider({ images, delay = 3000 }) {
 
     return(
         <img
+        className="servicePhotos"
         src={images[index]}
         alt="Service Visual"
-        style={{
-            width: '500px',
-            height: '150px',
-            objectFit: 'cover',
-            borderRadius: '10px'
-          }}
+        // style={{
+        //     width: '500px',
+        //     height: '150px',
+        //     objectFit: 'cover',
+        //     borderRadius: '10px'
+        //   }}
         />
     )
 }
