@@ -321,4 +321,24 @@ form button:hover {
     gap: 0.5rem;
     margin-top: 0.5rem;
   }
+  .topbar-header {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.topbar-logo {
+  padding-top: 0;
+  width: 120px;
+  height: auto;
+}
+
+.topbar-title {
+  position: static;
+  transform: none;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
 }
