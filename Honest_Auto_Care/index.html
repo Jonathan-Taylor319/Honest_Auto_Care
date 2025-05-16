@@ -10,5 +10,15 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- Netlify hidden form to register the form on build -->
+<form name="contact" data-netlify="true" hidden>
+  <input type="text" name="name" />
+  <input type="tel" name="phone" />
+  <input type="text" name="vin" />
+  <input type="text" name="year" />
+  <input type="text" name="make" />
+  <input type="text" name="model" />
+  <textarea name="issues"></textarea>
+</form>
   </body>
 </html>
