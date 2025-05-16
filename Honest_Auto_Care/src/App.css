@@ -327,14 +327,20 @@ form button:hover {
     padding: 1rem;
   }
 
- .slider-wrapper,
-.servicePhotos {
-  width: 100%;
-  max-width: 250px; /* or whatever fixed max size works well */
-  height: auto;
-  margin: 0 auto; /* centers horizontally */
-  object-fit: cover; /* makes images crop nicely */
-}
+  .slider-wrapper,
+  .servicePhotos {
+    max-width: 100%;
+    height: 200px; 
+    overflow: hidden;
+  }
+
+  .slider-wrapper img,
+  .servicePhotos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+  }
 
   .homeHero {
   height: 50vh;
