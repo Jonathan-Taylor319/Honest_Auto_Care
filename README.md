@@ -1,6 +1,6 @@
 # Honest_Auto_Care
 Honest Auto Care – Mobile Mechanic Website - for a friend
-<img src="https://github.com/user-attachments/assets/c1c91d45-fa56-4df4-88f4-8bd7e5cd4548" alt="Honest Auto Care Logo" width="250" />
+<img src="https://github.com/user-attachments/assets/c1c91d45-fa56-4df4-88f4-8bd7e5cd4548" alt="Honest Auto Care Logo" width="150" />
 
 A clean, modern one-page React website for a mobile automotive repair business. Designed to showcase services, pricing, and direct contact functionality with smooth UI and responsive design.
 
