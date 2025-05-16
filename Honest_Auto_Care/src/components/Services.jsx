@@ -48,7 +48,7 @@ export default function Services() {
           </div>
 
           <p style={{ textAlign: "center", color: "#b59045" }}>Not Offering Tires / Alignments at This Time</p>
-          <h2 style={{ textAlign: "center" }}>All Labor Times are Taken Straight from Manufacture List Times:</h2>
+          <h2 style={{ textAlign: "center" }}>All Labor Times are Taken Straight from Manufacturer List Times:</h2>
           <p style={{ textAlign: "center", color: "#b59045" }}>* Parts not included *</p>
           <h3 style={{
             textAlign: "center",

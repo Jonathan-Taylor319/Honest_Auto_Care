@@ -5,7 +5,7 @@ function TopBar({ setActivePage }) {
     <nav className="topbar">
       <div className="topbar-header">
         <img src={logo} className="topbar-logo" alt="Honest Auto Care logo" />
-        <h1 className="topbar-title">Honest Auto Care</h1>
+        <h1 className="topbar-title">Honest Auto Care LLC</h1>
       </div>
 
       <div className="topbar-buttons">
