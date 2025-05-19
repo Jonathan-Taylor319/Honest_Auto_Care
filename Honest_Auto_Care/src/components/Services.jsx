@@ -43,7 +43,7 @@ export default function Services() {
               <li>Batteries</li>
               <li>General Maintenance</li>
               <li>Struts</li>
-              <li>Inquire About Other Repairs</li> {/* fixed typo */}
+              <li>Inquire About Other Repairs</li>
             </ul>
           </div>
 
@@ -61,8 +61,10 @@ export default function Services() {
             <br /><br />
             $125.00 - Pre-Purchase Inspection
             <br /><br />
-            $175.00 - EMERGENCY SERVICE
-            <br /><br />
+            $150.00 - EMERGENCY SERVICE
+            <br />
+            *24 hour service*
+            <br />
           </h3>
         </div>
 
