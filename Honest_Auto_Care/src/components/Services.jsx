@@ -47,7 +47,7 @@ export default function Services() {
             </ul>
           </div>
 
-          <p style={{ textAlign: "center", color: "#b59045" }}>Not Offering Tires / Alignments at This Time</p>
+          <p style={{ textAlign: "center", color: "#b59045" }}>Not Offering Tires or Alignments at This Time</p>
           <h2 style={{ textAlign: "center" }}>All Labor Times are Taken Straight from Manufacturer List Times:</h2>
           <p style={{ textAlign: "center", color: "#b59045" }}>* Parts not included *</p>
           <h3 style={{
@@ -55,14 +55,11 @@ export default function Services() {
             color: "#b59045",
             textShadow: "2px 2px 4px rgba(0, 0, 0, 0.9), 0 0 4px rgba(0, 0, 0, 0.6)"
           }}>
-            $75.00 - Initial Diag / Show-Up Fee
+            $40.00 - Show-Up Fee
             <br />
-            *No Fee For General Service*
+            $125.00 - Diag Fee (per hour)
             <br />
-            <br />
-            $125.00 - Per Hour
-            <br /><br />
-            $125.00 - Pre-Purchase Inspection
+            *1 hour minimum*
             <br /><br />
             $150.00 - EMERGENCY SERVICE
             <br />
