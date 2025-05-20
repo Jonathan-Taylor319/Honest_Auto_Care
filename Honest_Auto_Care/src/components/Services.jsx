@@ -56,7 +56,10 @@ export default function Services() {
             textShadow: "2px 2px 4px rgba(0, 0, 0, 0.9), 0 0 4px rgba(0, 0, 0, 0.6)"
           }}>
             $75.00 - Initial Diag / Show-Up Fee
-            <br /><br />
+            <br />
+            *No Fee For General Service*
+            <br />
+            <br />
             $125.00 - Per Hour
             <br /><br />
             $125.00 - Pre-Purchase Inspection

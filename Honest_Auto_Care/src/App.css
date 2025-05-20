@@ -5,6 +5,7 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  font-family: 'Merriweather', serif;
 }
 
 body {
@@ -14,7 +15,6 @@ body {
   background-size: cover, auto;
   background-blend-mode: overlay;
   color: #f5f5f5;
-  font-family: 'Merriweather', serif;
 }
 
 html {
@@ -32,6 +32,9 @@ button:hover {
   cursor: pointer;
 }
 
+/* ========================= */
+/* ====== TOPBAR AREA ====== */
+/* ========================= */
 .topbar {
   position: sticky;
   top: 0;
@@ -44,38 +47,61 @@ button:hover {
 }
 
 .topbar-header {
-  position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: start;
-  height: 70px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topbar-left,
+.topbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.topbar-center {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .topbar-logo {
-  width: 150px;
+  width: 100px;
   height: auto;
-  padding-top: 35px;
 }
 
 .topbar-title {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   font-size: 2rem;
   font-weight: 600;
   color: #c9a753;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
   letter-spacing: 0.5px;
+  text-align: center;
+  margin: 0;
+}
+
+.topbar-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
 .topbar-buttons {
-  margin-top: 1rem;
   display: flex;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+  margin-top: 0.5rem;
 }
 
+/* ========================= */
+/* ====== BUTTONS AREA ===== */
+/* ========================= */
 .gold-button {
   background-color: #c9a753;
   color: #1c1c1c;
@@ -96,6 +122,14 @@ button:hover {
   transition: all 0.2s ease-in-out;
 }
 
+.gold-button.small {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+/* ========================= */
+/* ====== SECTIONS AREA ==== */
+/* ========================= */
 .homeSection {
   flex: 1;
   width: 100%;
@@ -108,6 +142,13 @@ button:hover {
   color: white;
 }
 
+.homeHero {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
 .fade-in {
   opacity: 0;
   animation: fadeIn ease 1s forwards;
@@ -118,13 +159,9 @@ button:hover {
   100% { opacity: 1; transform: translateY(0); }
 }
 
-.homeHero {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  display: block;
-}
-
+/* ========================= */
+/* ====== SERVICES AREA ==== */
+/* ========================= */
 .listHolder {
   display: flex;
   justify-content: center;
@@ -175,6 +212,7 @@ button:hover {
   min-width: 300px;
 }
 
+
 .popup {
   background-color: #d4edda;
   color: #155724;
@@ -190,7 +228,7 @@ button:hover {
   justify-content: center;
   align-items: flex-start;
   padding: 2rem 1rem;
-  padding-top: 2rem;
+  padding-top: 0%;
   min-height: 100vh;
 }
 
@@ -203,7 +241,6 @@ form {
   max-width: 500px;
   width: 100%;
   color: #f8f8f8;
-  font-family: 'Merriweather', serif;
 }
 
 form label {
@@ -211,10 +248,6 @@ form label {
   margin-bottom: 0.5rem;
   margin-top: 1rem;
   font-weight: bold;
-}
-
-form textarea {
-  margin-bottom: 1rem;
 }
 
 form input,
@@ -250,44 +283,26 @@ form button:hover {
   background-color: #e0c04d;
 }
 
-/* --- MOBILE STYLES BELOW --- */
+
 @media (max-width: 600px) {
   .topbar-header {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: auto;
   }
 
-  .topbar-logo {
-    padding-top: 0;
-    width: 120px;
-    height: auto;
+  .topbar-left,
+  .topbar-right {
+    display: none;
   }
 
   .topbar-title {
-    position: static;
-    transform: none;
-    text-align: center;
     font-size: 1.5rem;
-    margin-top: 0.5rem;
-  }
-
-  .topbar {
-    padding: 0.5rem 1rem;
+    text-align: center;
   }
 
   .topbar-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-  h1, h2 {
-    font-size: 1.5rem;
-    text-align: center;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .form-container {
@@ -300,26 +315,6 @@ form button:hover {
     width: 100%;
   }
 
-  form label {
-    margin-top: 0.75rem;
-    margin-bottom: 0.25rem;
-  }
-
-  form input,
-  form textarea {
-    font-size: 0.9rem;
-    padding: 0.5rem;
-  }
-
-  form textarea {
-    min-height: 80px;
-  }
-
-  form button {
-    padding: 0.6rem 1rem;
-    font-size: 1rem;
-  }
-
   .services-flex {
     flex-direction: column;
     align-items: center;
@@ -330,7 +325,7 @@ form button:hover {
   .slider-wrapper,
   .servicePhotos {
     max-width: 100%;
-    height: 300px; 
+    height: 300px;
     overflow: hidden;
   }
 
@@ -338,12 +333,12 @@ form button:hover {
   .servicePhotos img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     display: block;
   }
 
   .homeHero {
-  height: 50vh;
-  object-fit: cover;
-}
+    height: 50vh;
+    object-fit: cover;
+  }
 }
