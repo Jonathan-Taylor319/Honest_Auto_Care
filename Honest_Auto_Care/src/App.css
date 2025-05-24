@@ -309,10 +309,11 @@ form button:hover {
   text-align: center;
   }
 
-  .topbar-buttons, .gold-button-small {
+  .topbar-buttons, .gold-button-small, .topbar-title {
   padding-right: 3rem;
   }
-    .button-container {
+    
+  .button-container {
     align-items: center;
      padding-right: 3rem;
   }
