@@ -305,6 +305,10 @@ form button:hover {
     gap: 0.5rem;
   }
 
+    .button-container {
+    align-items: center;
+  }
+  
   .form-container {
     padding: 1rem;
     align-items: center;
