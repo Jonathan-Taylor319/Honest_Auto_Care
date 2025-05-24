@@ -301,10 +301,13 @@ form button:hover {
   }
 
   .topbar-buttons {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+ }
     .button-container {
     align-items: center;
   }
