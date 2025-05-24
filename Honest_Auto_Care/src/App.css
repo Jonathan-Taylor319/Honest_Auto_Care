@@ -314,6 +314,7 @@ form button:hover {
 }
     .button-container {
     align-items: center;
+     padding-right: 3rem;
   }
 
   .form-container {
