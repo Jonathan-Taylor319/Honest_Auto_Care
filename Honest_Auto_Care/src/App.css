@@ -307,11 +307,11 @@ form button:hover {
   justify-content: center;
   width: 100%;
   text-align: center;
-}
+  }
 
-.topbar-buttons {
+  .topbar-buttons, gold-button small {
   padding-right: 3rem;
-}
+  }
     .button-container {
     align-items: center;
      padding-right: 3rem;
