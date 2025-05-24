@@ -304,17 +304,20 @@ form button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
+  text-align: center;
 }
 
- .topbar-buttons {
+.topbar-buttons {
   display: flex;
   flex-direction: column;
-  align-items: center;     /* ← This is critical for mobile */
+  align-items: center; /* <-- This is the key to center them */
   justify-content: center;
-  gap: 0.5rem;
   width: 100%;
-  }
+  padding: 0;
+  margin: 0 auto;
+}
     .button-container {
     align-items: center;
   }
