@@ -13,8 +13,8 @@ function TopBar({ setActivePage }) {
         <div className="topbar-center">
           <h1 className="topbar-title">Honest Auto Care LLC</h1>
           <div className="topbar-actions">
-            <a href="tel:19087052462" className="gold-button small">📞</a>
-            <a href="sms:19087052462" className="gold-button small">💬</a>
+            <a href="tel:19087052462" className="gold-button-small">📞</a>
+            <a href="sms:19087052462" className="gold-button-small">💬</a>
           </div>
           <div className="topbar-buttons">
             <button className="gold-button" onClick={() => setActivePage('home')}>Home</button>
