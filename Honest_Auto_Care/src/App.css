@@ -309,7 +309,7 @@ form button:hover {
   text-align: center;
   }
 
-  .topbar-buttons, gold-button small {
+  .topbar-buttons, .gold-button-small {
   padding-right: 3rem;
   }
     .button-container {
