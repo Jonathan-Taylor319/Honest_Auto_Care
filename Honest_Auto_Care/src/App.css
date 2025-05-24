@@ -300,14 +300,21 @@ form button:hover {
     text-align: center;
   }
 
-  .topbar-buttons {
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  .topbar-center {
   display: flex;
- }
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+ .topbar-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* ← This is critical for mobile */
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  }
     .button-container {
     align-items: center;
   }
