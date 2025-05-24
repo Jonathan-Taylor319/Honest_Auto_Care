@@ -284,7 +284,7 @@ form button:hover {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .topbar-header {
     flex-direction: column;
     align-items: center;
@@ -308,7 +308,7 @@ form button:hover {
     .button-container {
     align-items: center;
   }
-  
+
   .form-container {
     padding: 1rem;
     align-items: center;
