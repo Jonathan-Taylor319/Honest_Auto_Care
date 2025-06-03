@@ -55,7 +55,6 @@ export default function Services() {
             color: "#b59045",
             textShadow: "2px 2px 4px rgba(0, 0, 0, 0.9), 0 0 4px rgba(0, 0, 0, 0.6)"
           }}>
-            $40.00 - Show-Up Fee
             <br />
             $125.00 - Diag Fee (per hour)
             <br />

@@ -122,9 +122,9 @@ button:hover {
   transition: all 0.2s ease-in-out;
 }
 
-.gold-button.small {
+.gold-button-small {
   padding: 0.4rem 0.6rem;
-  font-size: 0.9rem;
+  font-size: 40px;
 }
 
 /* ========================= */
